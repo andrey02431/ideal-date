@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <title>Ideal Date</title>
+    <header>
+      <h1 id="title">Ideal Date</h1>
+      <p id="description">Thank you for choosing ideal date with me :D</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">
+          <p class="q-p">Please enter your name</p>
+          <input
+            class="input-style"
+            placeholder="Enter your name here..."
+            type="text"
+            id="name"
+            required
+          />
+        </label>
+        <label id="email-label" for="email">
+          <p class="q-p">Please enter your email</p>
+          <input
+            class="input-style"
+            placeholder="Enter your email here..."
+            pattern="[^ @]*@[^ @]*"
+            type="email"
+            id="email"
+            required
+          />
+        </label>
+        <label id="number-label" for="number">
+          <p class="q-p">Please enter your age</p>
+          <input
+            class="input-style"
+            placeholder="Enter your age here..."
+            type="number"
+            id="number"
+            min="18"
+            max="40"
+            required
+          />
+        </label>
+        <label for="dropdown">
+          <p class="q-p">Which date would you prefer</p>
+          <select class="input-style" name="dropdown" id="dropdown">
+            <option disabled selected value>
+              Please select your ideal date here
+            </option>
+            <option value="movie-night">Movie Night</option>
+            <option value="cuddling">Cuddling at home</option>
+            <option value="alcohol">Getting drunk in the club</option>
+            <option value="pizza">Netflix and pizza at home</option>
+            <option value="massage">Recieving Massage</option>
+          </select>
+        </label>
+        <div class="radio-group">
+          <p class="q-p">Choose how often you would like to go on a date?</p>
+          <label for="date">
+            <input
+              class="input-radio"
+              value="rarely"
+              type="radio"
+              name="date"
+              id="date"
+            />Rarely 1 time a week or less
+          </label>
+          <label for="date">
+            <input
+              class="input-radio"
+              value="average"
+              type="radio"
+              name="date"
+              id="date"
+            />Average 1 to 3 times a week
+          </label>
+          <label for="date">
+            <input
+              class="input-radio"
+              type="radio"
+              name="date"
+              id="date"
+              value="often"
+            />Often 3+ times a week
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <label for="checkboxes">
+            <p class="q-p">
+              In which weather you would go onto your ideal date?
+            </p>
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              id="checkbox"
+              value="Sunny"
+            />Sunny
+          </label>
+          <label for="checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="rainy"
+              id="checkbox"
+            />Rainy
+          </label>
+          <label for="checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              id="checkbox"
+              value="snowy"
+            />Snowy
+          </label>
+          <label for="checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              id="checkbox"
+              value="cold"
+            />Cold
+          </label>
+        </div>
+        <label for="extra-info">
+          <p class="q-p">
+            Please let us know anything else you would like before we send you
+            final quote.
+          </p>
+          <textarea
+            name="extra-info"
+            id="extra-info"
+            cols="90"
+            rows="10"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </label>
+        <label for="submit" id="label-submit">
+          <input type="submit" value="Submit" id="submit" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>
